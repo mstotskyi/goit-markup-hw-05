@@ -273,7 +273,7 @@
     <!-- Футер -->
     <footer class="footer-section">
       <div class="container footer-blocks">
-        <div>
+        <div class="widget-block">
           <a href="./index.html" class="logo">
             <span class="logo-web">Web</span><span class="logo-studio-footer">Studio</span></a
           >
@@ -316,6 +316,17 @@
             </li>
           </ul>
         </div>
+        <div class="subscription">
+          <h2 class="actions">Подпишитесь на рассылку</h2>
+          <form class="subscription-form">
+            <input class="form-field" type="email" placeholder="E-mail" />
+            <button class="btn-submit" type="submit">
+              Подписаться<svg class="subscription-icon" width="24" height="24">
+                <use href="./images/sprite.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
@@ -325,6 +336,50 @@
             <use href="./images/sprite.svg#icon-close"></use>
           </svg>
         </button>
+        <form class="form">
+          <b class="form-title">Оставьте свои данные, мы вам перезвоним</b>
+          <div class="form-field">
+            <label class="form-label" for="name">Имя</label>
+            <input class="form-field-actions" type="text" id="name" />
+            <svg class="icon" width="18" height="18">
+              <use href="./images/sprite.svg#icon-person"></use>
+            </svg>
+          </div>
+          <div class="form-field">
+            <label class="form-label" for="tel">Телефон</label>
+            <input class="form-field-actions" type="tel" id="tel" />
+            <svg class="icon" width="18" height="18">
+              <use href="./images/sprite.svg#icon-phone"></use>
+            </svg>
+          </div>
+          <div class="form-field">
+            <label class="form-label" for="email">Почта</label>
+            <input class="form-field-actions" type="email" id="email" />
+            <svg class="icon" width="18" height="18">
+              <use href="./images/sprite.svg#icon-mail"></use>
+            </svg>
+          </div>
+          <div class="form-field">
+            <label class="form-label" for="coment">Комментарий</label>
+            <textarea
+              class="form-field-actions form-massage"
+              name="coment"
+              id="coment"
+              cols="30"
+              rows="10"
+              placeholder="Введите текст"
+            ></textarea>
+          </div>
+          <div class="policy-check">
+            <label class="form-label" for="policy"
+              ><input class="checkbox" type="checkbox" name="policy" id="policy" />
+              <span class="checkbox-icon"></span>
+              Соглашаюсь с рассылкой и принимаю
+              <a class="link" href="">Условия договора</a></label
+            >
+          </div>
+          <button class="btn-submit" type="submit">Отправить</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
